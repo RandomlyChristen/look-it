@@ -1,0 +1,3 @@
+rootProject.name = "LookIt"
+include ':app'
+include ':opencv-sdk'

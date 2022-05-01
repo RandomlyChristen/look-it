@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:id="@+id/memo_item_detail_btn"
+        android:clickable="true"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7">
+
+        <TextView
+            android:id="@+id/memo_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text="제목입니다"/>
+
+        <TextView
+            android:id="@+id/memo_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="15dp"
+            android:text="내용입니다 내용입니다 내용입니다 내용입니다 내용입니다\n 내용입니다 내용입니다 내용입니다 "/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/memo_item_move_btn"
+        android:layout_margin="5dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:clickable="false"
+        android:text="옮기기"/>
+
+    <Button
+        android:id="@+id/memo_item_delete_btn"
+        android:layout_margin="5dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:backgroundTint="@color/design_default_color_error"
+        android:clickable="false"
+        android:text="삭제"/>
+
+
+
+</LinearLayout>
